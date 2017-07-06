@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title>Projeto Final - Thiago Antonio Ferreira Dieb Pimentel</title>
+        <link href='//fonts.googleapis.com/css?family=Lato:300' rel='stylesheet' type='text/css'>
+        <style>
+            body {
+                padding: 0;
+                width: 100%;
+                font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+                color: #aaa;
+                font-size: 18px;
+            } 
+        </style>
+    </head>
+    <body>
+        <h1>Projeto Final</h1>
+        <div>Aluno: Thiago Antonio Fererira Dieb Pimentel</div>
+        <h2>REST - Microservice em PHP</h2>
+
+        <p> URL's</p>
+        <ul>
+         <li>Listar produtos <a href="http://localhost:8080/produtos"> GET - /produtos</a></li>
+         <li>Ver Único produto <a href="http://localhost:8080/produtos/1"> GET - /produtos/1</a></li>
+         <li>Adicionar produtos <a href="http://localhost:8080/produtos"> POST - /produtos</a></li>
+         <li>Atualizar Único produto <a href="http://localhost:8080/produtos/1"> PUT - /produtos/1</a></li>
+         <li>Apagar Único produto <a href="http://localhost:8080/produtos/1"> DELETE - /produtos</a></li>
+        </ul>
+        
+        <h2> Formulário para teste</h2>
+        
+        <p>POST - Adicionar</p>
+         <form method="POST" action="http://localhost:8080/produtos">
+             Nome:<input type="text" name="nome"></br>
+             Marca:<input type="text" name="marca"></br>
+             <input type="submit">
+         </form>
+
+        <p>PUT - Alterar</p>
+         <form method="POST" action="http://localhost:8080/produtos/1">
+           <input type="hidden" name="_METHOD" value="PUT" />
+             Nome:<input type="text" name="nome"></br>
+             Marca:<input type="text" name="marca"></br>
+             <input type="submit">
+         </form>
+
+        <p>DELETE - Apagar</p>
+         <form method="POST" action="http://localhost:8080/produtos/1">
+           <input type="hidden" name="_METHOD" value="DELETE" /> 
+             <input type="submit">
+         </form>
+
+    </body>
+</html>
